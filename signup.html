@@ -2,24 +2,25 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Nexus - Login</title>
+  <title>Nexus - Sign Up</title>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
   <script src="firebase.js"></script>
 </head>
 <body>
-  <h2>Login to Nexus</h2>
+  <h2>Create Account</h2>
   <input type="email" id="email" placeholder="Email">
   <input type="password" id="password" placeholder="Password">
-  <button onclick="login()">Login</button>
-  <p>No account? <a href="signup.html">Sign up here</a></p>
+  <button onclick="signup()">Sign Up</button>
+  <p>Already have an account? <a href="index.html">Login here</a></p>
 
   <script>
-    function login() {
+    function signup() {
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      firebase.auth().signInWithEmailAndPassword(email, password)
+      firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(() => {
+          alert("Account created!");
           window.location.href = "home.html";
         })
         .catch((error) => {
