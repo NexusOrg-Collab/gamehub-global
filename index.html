@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameHub Global</title>
+  <title>U-Gamer | Universal Ultimate Gamer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    }
+    .retro {
+      font-family: 'Press Start 2P', cursive;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white">
-  <!-- Navbar -->
-  <header class="bg-gray-800 shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-400">GameHub Global</h1>
-      <nav class="space-x-6">
+<body class="text-white">
+
+  <!-- Header -->
+  <header class="bg-black bg-opacity-70 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-3xl text-green-400 font-extrabold">U-Gamer</h1>
+      <nav class="space-x-6 text-sm">
         <a href="#" class="hover:text-green-400">Home</a>
         <a href="#" class="hover:text-green-400">Games</a>
         <a href="#" class="hover:text-green-400">Community</a>
@@ -22,31 +34,37 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="text-center py-20 px-6 bg-gradient-to-br from-gray-800 to-black">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Unite. Play. Conquer.</h2>
-    <p class="text-xl mb-8 max-w-2xl mx-auto">Join the ultimate online gaming platform made for gamers, by gamers. Explore games, connect globally, and dominate together.</p>
-    <a href="#" class="bg-green-500 hover:bg-green-400 text-black font-bold py-3 px-6 rounded-full transition duration-300">Get Started</a>
+  <section class="text-center py-20 px-6 bg-gradient-to-br from-gray-900 to-black">
+    <h2 class="text-5xl md:text-6xl font-extrabold text-green-400 mb-4">Universal Ultimate Gamer</h2>
+    <p class="text-xl max-w-xl mx-auto mb-8">Where gamers across galaxies unite. Play. Battle. Rise.</p>
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <a href="#" class="bg-green-500 hover:bg-green-400 text-black font-bold py-3 px-6 rounded-full transition duration-300">Play Now</a>
+      <a href="#" class="border border-green-500 text-green-400 hover:bg-green-500 hover:text-black font-bold py-3 px-6 rounded-full transition duration-300">Join Discord</a>
+    </div>
   </section>
 
-  <!-- Features -->
-  <section class="max-w-6xl mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-      <h3 class="text-2xl font-semibold text-green-400 mb-2">Global Multiplayer</h3>
-      <p>Connect and play with gamers from around the world in real time.</p>
-    </div>
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-      <h3 class="text-2xl font-semibold text-green-400 mb-2">Diverse Game Library</h3>
-      <p>Explore a wide range of genres and experiences curated for every gamer.</p>
-    </div>
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-      <h3 class="text-2xl font-semibold text-green-400 mb-2">Community Driven</h3>
-      <p>Join forums, live chats, and tournaments hosted by our passionate player base.</p>
+  <!-- Featured Games -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10 text-purple-400 retro">Featured Games</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transform transition">
+        <h4 class="text-2xl text-green-300 mb-2">Galaxy Raiders</h4>
+        <p>Battle in deep space with futuristic weapons and starships.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transform transition">
+        <h4 class="text-2xl text-pink-300 mb-2">Retro Run DX</h4>
+        <p>Dash through pixel planets and outsmart classic 8-bit bosses.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transform transition">
+        <h4 class="text-2xl text-yellow-300 mb-2">Mystic Blades</h4>
+        <p>Embark on an epic quest through enchanted realms and defeat dragons.</p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 py-6 mt-10 text-center text-sm text-gray-400">
-    &copy; 2025 GameHub Global. All rights reserved.
+  <footer class="bg-black bg-opacity-70 py-6 mt-10 text-center text-sm text-gray-400">
+    &copy; 2025 U-Gamer. Universal Ultimate Gamer. All rights reserved.
   </footer>
 </body>
 </html>
